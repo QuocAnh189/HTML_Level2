@@ -7,14 +7,57 @@
     <style>
         html {
             font-size: 16px;
-            width: 100vh;
         }
 
         * {
              padding: 0;
              margin: 0;
              border: none;
-         }   
+        }
+        
+        .container {
+          width: 100%;
+          height: 100%;
+        }
+
+        .header {
+          position: absolute ;
+          top: 0;
+          right: 0;
+          display: flex;
+        }
+
+        .center {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center; 
+          gap: 20px;
+        }
+
+        .leftbottom {
+          z-index: -1;
+          position: absolute;
+          bottom: 0;
+          left: 6em;
+        }
+
+        img {
+          flex-grow: 1;
+        }
+
+        h1 {
+          color: greenyellow;
+        }
+
+        .table {
+          border-color: greenyellow; 
+          font-size: 20px; 
+          border-width: 5px;
+        }
 
         tr:nth-child(odd) {
              background-color: #19e7e7;
@@ -35,16 +78,18 @@
      </style>
 </head>
 <body>
-    <div style="position: relative;width: 100rem;height: 100vh;">
-        <div style="width: 100%; position: absolute;top: 0;right: 0; display: flex;">
-            <img style="flex-grow: 1" src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
-            <img style="flex-grow: 1" src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
-            <img style="flex-grow: 1" src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
-            <img style="flex-grow: 1" src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
+    <div class="container">
+        <div class="header">
+            <img  src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
+            <img  src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
+            <img  src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
+            <img  src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
+            <img  src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
+            <img  src="./images/nguyen-tac-trong-thiet-ke-do-hoa.jpg"/>
         </div>
-        <div style="position: absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);display: flex;flex-direction: column;align-items: center; gap: 20px;">
-            <h1 style="color: greenyellow;">CHƯƠNG TRÌNH HỌC THIẾT KẾ ĐỒ HỌA</h1>
-            <table style="border-color: greenyellow; font-size: 20px; border-width: 5px;">
+        <div class="center">
+            <h1>CHƯƠNG TRÌNH HỌC THIẾT KẾ ĐỒ HỌA</h1>
+            <table class="table">
                 <tr style="background-color: greenyellow">
                   <th rowspan="2" style="width: 3rem;">STT</th>
                   <th rowspan="2">Tên môn học</th>
@@ -65,47 +110,47 @@
                     <td>Thiết kế mẫu với Illustrator</td>
                     <td>30</td>
                     <td>60</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>3</td>
                     <td>Xử lý ảnh với Photoshop</td>
                     <td>30</td>
                     <td>60</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>4</td>
                     <td>Mỹ thuật ứng dụng</td>
                     <td>30</td>
                     <td>30</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>5</td>
                     <td>Nghệ thuật chữ</td>
                     <td>30</td>
                     <td>30</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>6</td>
                     <td>Layout web</td>
                     <td>30</td>
                     <td>30</td>
-                  </tr>
-                  <tr>
+                </tr>
+                <tr>
                     <td>7</td>
                     <td>Thiết kế bộ nhận diện thương hiệu</td>
                     <td>30</td>
                     <td>60</td>
-                  </tr>
+                </tr>
 
-                  <tr style="background-color: orange;">
+                <tr style="background-color: orange;">
                     <td>8</td>
                     <td>Khóa luận tốt nghiệp</td>
                     <td></td>
                     <td>150</td>
-                  </tr>
+                </tr>
               </table>
         </div>
-        <div style="z-index: -1;position: absolute;bottom: 0;left: 6em;"><img src="./images/truong_day_thiet_ke_do_hoa.jpg"/></div>
+        <div class="leftbottom"><img src="./images/truong_day_thiet_ke_do_hoa.jpg"/></div>
     </div>
 </body>
 </html>

@@ -7,7 +7,6 @@
     <style>
         html {
             font-size: 16px;
-            /* width: 100vh; */
         }
         * {
              padding: 0;
@@ -15,15 +14,67 @@
              border: none;
          }  
          
-         p{
+        p{
             text-align: center;
             color: blue;
+        }
+
+        span {
+            text-decoration: underline; 
+            color: red;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%; 
+            background-color: rgb(84, 84, 209);
+            display: flex;
+            align-items: center;
+            justify-content: center;
          }
+
+        .main {
+            width: 70%; 
+            height: 100vh;
+            background-color: white; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .footer {
+            width: 100%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:30px
+        }
+
+        .imagefooter {
+            width: 100%;
+            display: flex; 
+            justify-content: space-evenly;
+        }
+
+        .textfooter {
+            max-width: 20rem; 
+            text-align: center;
+            color: black;
+        }
+
+        .mainitem {
+            width: 100%; 
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
      </style>
 </head>
 <body>
-    <div style="height: 100vh; background-color: rgb(84, 84, 209);display: flex;align-items: center;justify-content: center;">
-        <div style="width: 70%; height: 100vh;background-color: white; display: flex;flex-direction: column;align-items: center;justify-content: space-around;">
+    <div class="container">
+        <div class="main">
             <div><img src="./images/logoFreecom.gif"/></div>
             <div><img src="./images/bannerFreecom.gif"/></div>
             <p>
@@ -54,22 +105,22 @@
                 
                 <br/>
                 Oh, and by the way, it's all Free!</p>
-            <div style="width: 100%; display: flex;justify-content: space-evenly;align-items: center;">
+            <div class="mainitem">
                 <img src="./images/logon.gif"/>
                 <img src="./images/join.gif"/>
             </div>
-            <div style="width: 100%; display: flex;justify-content: space-evenly;align-items: center;">
+            <div class="mainitem">
                 <p>Existing members use this link to login to Free.com </p>
                 <p>Use this link to register at Free.com, it is completly FREE!</p>
             </div>
-            <p>Questions? Problems? Contact us at <span style="text-decoration: underline; color: red;">support@free.com</span></p>
-            <div style="width: 100%; display: flex;flex-direction: column;align-items: center;justify-content: center;gap:30px">
-                <div style="width: 100%;display: flex; justify-content: space-evenly;">
+            <p>Questions? Problems? Contact us at <span class="">support@free.com</span></p>
+            <div class="footer">
+                <div class="imagefooter">
                     <img src="./images/singlesbutton.gif"/>
                     <img src="./images/chatbutton.gif"/>
                     <img src="./images/dietbutton.gif"/>
                 </div>
-                <p style="max-width: 20rem; text-align: center;color: black;">2001-2002 National A-1 Advertising. All Rights Reserved.
+                <p class="textfooter">2001-2002 National A-1 Advertising. All Rights Reserved.
                     - read the disclaimer -</p>
             </div>
         </div>

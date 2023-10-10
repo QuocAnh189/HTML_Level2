@@ -12,14 +12,54 @@
              padding: 0;
              margin: 0;
              border: none;
-         }   
+        }
+        
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 14px;
+            text-align: justify;
+            font-size: 1.2em; 
+            row-gap: 10px;
+        }
+
+        h2 {
+            width: 100%; 
+            color: white;
+            background-color: red;
+            padding-left: 10px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .HoGomLake {
+            height: 12em;
+            float: left;
+            margin-right: 10px;
+        }
+
+        .flag {
+            z-index: -1;
+            position: absolute;
+            transform: translateX(-50%) translateY(-50%); 
+            left: 50%;
+            top: 50%;
+        }
+
+        .rightbottom {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
      </style>
 </head>
 <body>
-    <div style="position: relative;display: flex;flex-direction: column;align-items: center;padding: 14px;text-align: justify;font-size: 1.2em; row-gap: 10px;">
-        <h2 style="width: 100%; color: white;background-color: red;padding-left: 10px;padding-top: 6px;padding-bottom: 6px;">Hà Nội - Thủ Đô Ngàn Năm Văn Hiến</h2>
+    <div class="container">
+        <h2>Hà Nội - Thủ Đô Ngàn Năm Văn Hiến</h2>
         <div >
-            <img src="./images/ho-guom.jpg" style="height: 12em;float: left;margin-right: 10px;"/>
+            <img src="./images/ho-guom.jpg" class="HoGomLake"/>
             <div >
                 <p style="margin-bottom: 16px;"><span style="font-size: 3.6em;margin-top: -10px;margin-right: 10px;float: left;text-shadow: 3px 3px 3px red;color: yellow;">H</span><span style="font-size: 18px;">à Nội là thủ đô của nước Việt Nam từ năm 1976 đến nay, và là thủ đô của nước Việt Nam Dân chủ Cộng hòa từ năm 1946, là thành phố lớn nhất Việt Nam về diện tích với 3328,9 km2, đồng thời cũng là địa phương đứng thứ nhì về dân số với 6.699.600 người (2011). Hiện nay, thủ đô Hà Nội và thành phố Hồ Chí Minh là đô thị loại đặc biệt của Việt Nam. Hà Nội nằm giữa đồng bằng sông Hồng trù phú, nơi đây đã sớm trở thành một trung tâm chính trị và tôn giáo ngay từ những buổi đầu của lịch sử Việt Nam. Năm 1010, Lý Công Uẩn, vị vua đầu tiên của nhà Lý, quyết định xây dựng kinh đô mới ở vùng đất này với cái tên Thăng Long. Trong suốt thời kỳ của các triều đại Lý, Trần, Lê, Mạc, kinh thành Thăng Long là nơi buôn bán, trung tâm văn hóa, giáo dục của cả miền Bắc. Khi Tây Sơn rồi nhà Nguyễn lên nắm quyền trị vì, kinh đô được chuyển về Huế và Thăng Long bắt đầu mang tên Hà Nội từ năm 1831, dưới thời vua Minh Mạng. Năm 1902, Hà Nội trở thành thủ đô của Liên bang Đông Dương và được người Pháp xây dựng, quy hoạch lại. Trải qua hai cuộc chiến tranh, Hà Nội là thủ đô của miền Bắc rồi nước Việt Nam thống nhất và giữ vai trò này cho tới ngày nay.</span></p>
                 <p>Sau đợt mở rộng địa giới hành chính vào tháng 8 năm 2008, Hà Nội hiện nay gồm 12 quận, 1 thị xã và 17 huyện ngoại thành. Hiện nay, Hà Nội và Thành phố Hồ Chí Minh là hai trung tâm kinh tế - xã hội đặc biệt quan trọng của Việt Nam. Năm 2009, sau khi mở rộng, GDP của thành phố tăng khoảng 6,67%, tổng thu ngân sách khoảng 70.054 tỷ đồng. Hà Nội cũng là một trung tâm văn hóa, giáo dục với các nhà hát, bảo tàng, các làng nghề truyền thống, những cơ quan truyền thông cấp quốc gia và các trường đại học lớn.</p>
@@ -36,9 +76,9 @@
         </div>
         <p>Lăng được khánh thành vào ngày 29 tháng 8 năm 1975. Lăng gồm 3 lớp với chiều cao 21,6 mét, lớp dưới tạo dáng bậc thềm tam cấp, lớp giữa là kết cấu trung tâm của lăng gồm phòng thi hài và những hành lang, những cầu thang lên xuống. Quanh bốn mặt là những hàng cột vuông bằng đá hoa cương, lớp trên cùng là mái lăng hình tam cấp. Ở mặt chính có dòng chữ: "Chủ tịch Hồ Chí Minh" bằng đá hồng màu mận chín. Trong di chúc, Hồ Chí Minh muốn được hỏa táng và đặt tro tại ba miền đất nước. Tuy nhiên, Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa III, với lý do "theo nguyện vọng và tình cảm của nhân dân", quyết định giữ gìn lâu dài thi hài Hồ Chí Minh để sau này người dân cả nước, nhất là người dân miền Nam, khách quốc tế có thể tới viếng.</p>
     </div>
-    <div style="z-index: -1;position: absolute;transform: translateX(-50%) translateY(-50%); left: 50%;top: 50%;">
+    <div class="flag">
         <img src="./images/co-vietnam.png"/>
     </div>
-    <div style="position: fixed;right: 10px;bottom: 10px;"><p>Về đầu trang</p></div>
+    <div class="rightbottom"><p>Về đầu trang</p></div>
 </body>
 </html>
