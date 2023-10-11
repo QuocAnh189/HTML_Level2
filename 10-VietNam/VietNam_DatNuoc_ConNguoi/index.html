@@ -10,9 +10,15 @@
             margin: 0;
             border: none;
         }   
+
+        .imagevietnam:hover {
+            cursor: pointer;
+        }
     </style>
+    
 </head>
 <body>
+    
     <div style="position: relative;display: flex;flex-direction: column; justify-content: center; gap: 20px;align-items: center;padding: 6px">
         <div style="width: 100%;height: 100%; display: flex;flex-direction: column; align-items: center;justify-content: space-around; position: absolute;top: 0;left: 0;right: 0;">
             <img src="./images/co-vietnam.png"/>
@@ -21,7 +27,8 @@
         <h1 style="color: red; font-weight: 800;">Việt Nam - Đất nước - Con người</h1>
         <div style="z-index: 1; width: 100%;display: flex;flex-direction: column; gap: 10px;align-items: center;">
             <div style="display: flex;flex-direction: row;max-height: 400px; gap:30px">
-                <img src="./images/ban-do-viet-nam.png" style="height: 350px;"/>
+                <img class="imagevietnam" src="./images/ban-do-viet-nam.png" style="height: 350px; " onclick="playAudio()"/>
+                <span><audio id="myAudio" type="audio/mpeg" src="./audio/HelloVietNam-QuynhAnh.mp3" style="position: absolute;"/></span>
                 <div style="display: flex;flex-direction: column;justify-content: space-between;">
                     <ul>
                         <li style="color: blue;text-decoration: underline;">Việt Nam - nước Cộng hòa Xã hội Chủ nghĩa</li>
@@ -49,5 +56,17 @@
         <p>Về tài nguyên đất, Việt Nam có rừng tự nhiên và nhiều mỏ khoáng sản trên đất liền với phốt phát, than đá, măng gan, bô xít, chrômát,... Về tài nguyên biển có dầu mỏ, khí tự nhiên, quặng khoáng sản ngoài khơi. Với hệ thống sông dốc đổ từ các cao nguyên phía tây, Việt Nam có nhiều tiềm năng về phát triển thủy điện.</p>
         <p style="position: fixed; right: 10px; bottom: 10px;">Về đầu trang</p>
     </div>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+        x.play();
+        }
+
+        function pauseAudio() {
+        x.pause();
+        }
+    </script>
 </body>
 </html>

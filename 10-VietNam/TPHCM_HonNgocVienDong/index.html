@@ -12,14 +12,40 @@
              padding: 0;
              margin: 0;
              border: none;
-         }   
+        }   
+
+        .container {
+            position: relative; 
+            padding: 14px; 
+            font-size: 1.47em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            width: 100%; 
+            color: white;
+            background-color: rgb(219, 63, 219);
+            padding-left: 10px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        p{
+            column-count: 3;
+            text-align: justify;
+            margin-top: 10px;
+            column-rule-style: dashed;
+            column-rule-color: gray;
+        }
 
      </style>
 </head>
 <body>
-    <div style="position: relative; padding: 14px; font-size: 1.47em;display: flex;flex-direction: column;align-items: center;">
-        <h2 style="width: 100%; color: white;background-color: rgb(219, 63, 219);padding-left: 10px;padding-top: 6px;padding-bottom: 6px;">tpHCM - Hòn ngọc Biển Đông</h2>
-        <p style="column-count: 3;text-align: justify;margin-top: 10px;column-rule-style: dashed;column-rule-color: gray;">
+    <div class="container">
+        <h2>tpHCM - Hòn ngọc Biển Đông</h2>
+        <p>
             <img src="./images/T-hong.png"/ style="float: left;">
             hành phố Hồ Chí Minh (hiện nay vẫn được gọi phổ biến với tên cũ là Sài Gòn) là thành phố đông dân nhất, đồng thời cũng là trung tâm kinh tế, văn hóa, giáo dục quan trọng của Việt Nam. Trên cơ sở diện tích tự nhiên, thì thành phố Hồ Chí Minh là đô thị lớn thứ nhì Việt Nam (sau khi thủ đô Hà Nội được mở rộng). Nếu xét về quy mô dân số, thì thành phố Hồ Chí Minh là đô thị lớn nhất Việt Nam. Hiện nay, thành phố Hồ Chí Minh cùng với thủ đô Hà Nội là đô thị loại đặc biệt của Việt Nam.
             
@@ -40,7 +66,7 @@
             Tuy vậy, Thành phố Hồ Chí Minh đang phải đối diện với những vấn đề của một đô thị lớn có dân số tăng quá nhanh. Trong nội ô thành phố, đường sá trở nên quá tải, thường xuyên ùn tắc. Hệ thống giao thông công cộng kém hiệu quả. Môi trường thành phố cũng đang bị ô nhiễm do phương tiện giao thông, các công trường xây dựng và công nghiệp sản xuất.
         </p>
         <div style="z-index: -1;position: absolute;left: 50%;top: 50%;transform: translateX(-50%) translateY(-60%)"><img src="./images/co-vietnam.png"/></div>
-        <div style="position: fixed;right: 10px;bottom: 10px;"><p>Về đầu trang</p></div>
+        <div style="position: absolute;right: 1em;bottom: 1em;">Về đầu trang</div>
     </div>
 </body>
 </html>

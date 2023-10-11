@@ -9,24 +9,59 @@
         html {
             font-size: 16px;
         }
+
         * {
              padding: 0;
              margin: 0;
              border: none;
-         }   
+        }   
+
+        .container {
+            position: relative; 
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            padding: 14px; 
+            gap: 1.2rem; 
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        h2 {
+            width: 100%; 
+            color: white;
+            background-color: rgb(135, 44, 135);
+            padding-left: 10px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .twoflag {
+            z-index:-1;
+            position: absolute;
+            bottom: 0; display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-around;
+        }
+
+        .label {
+            font-style: italic; 
+            font-weight: 700;
+        }
 
      </style>
 </head>
 
 <body>
-    <div style="position: relative; display: flex;flex-direction: column;align-items: center ;padding: 14px; gap: 1.2rem; font-size: 1.2rem; text-align: justify;">
-        <h2 style="width: 100%; color: white;background-color: rgb(135, 44, 135);padding-left: 10px;padding-top: 6px;padding-bottom: 6px;">Huế - Cố đô Phong Kiến</h2>
+    <div class="container">
+        <h2 >Huế - Cố đô Phong Kiến</h2>
         <div style="display: flex;flex-direction: row;">
             <img src="./images/H-tim.png" style="height: 5em"/>
             <p>uế nằm ở dải đất hẹp của miền Trung Việt Nam và là thành phố tỉnh lỵ của Thừa Thiên - Huế. Thành phố là trung tâm về nhiều mặt của miền Trung như văn hoá, chính trị, giáo dục, du lịch... Với dòng sông Hương và những di sản để lại của triều đại phong kiến, Huế, còn gọi là đất Thần Kinh hay xứ thơ, là một trong những thành phố được nhắc tới nhiều trong thơ văn và âm nhạc Việt Nam. Thành phố có hai danh hiệu UNESCO ở Việt Nam. Huế là đô thị cấp quốc gia của Việt Nam và cố đô của Việt Nam thời phong kiến dưới triều nhà Nguyễn (1802 - 1945).</p>
         </div>
         <img src="./images/Cau-trang-tien-hue.jpg" style="width: 40%;"/>
-        <p style="font-style: italic; font-weight: 700;">Cầu Tràn Tiền về đêm</p>
+        <p class="label">Cầu Tràn Tiền về đêm</p>
         <p >Thuận Hóa - Phú Xuân -Huế có một quá trình lịch sử hình thành và phát triển khoảng gần 7 thế kỷ (tính từ năm 1306). Trong khoảng thời gian khá dài ấy Huế đã tích hợp được những giá trị vật chất và tinh thần quý báu để tạo nên một truyền thống văn hóa Huế. Truyền thống ấy vừa mang tính đặc thù - bản địa của một vùng đất, không tách rời những đặc điểm chung của truyền thống văn hóa dân tộc Việt Nam; trong tiến trình hình thành văn hóa Huế có sự tác động của văn hóa Đông Sơn do các lớp cư dân từ phía Bắc mang vào trước thế kỷ 2 và sau thế kỷ 13 hỗn dung với thành phần văn hóa Sa Huỳnhtạo nên nền văn hóa Việt - Chăm. Trong quá trình phát triển, chuyển biến có ảnh hưởng của các luồng văn hóa khác các nước trong khu vực Đông Nam Á, Trung Quốc, Ấn Độ, phương Tây...</P>
         <div>
             <img src="./images/dien-thai-hoa-hue.jpg" style="height: 10em;float: left;margin-right: 10px;"/>
@@ -41,7 +76,7 @@
         <p>Với trên 15 vở múa lớn, từ múa tế lễ, múa chúc tụng, múa tiếp sứ, múa yến tiệc, múa trình diễn tích tuồng. Nhiều vở múa có tính hoành tráng, quy mô diễn viên đông, phô diễn được vẻ đẹp rộn ràng, lấp lánh và kỹ thuật, kỹ xảo của múa hát cung đình Việt Nam thể hiện được sự phát triển nâng cao múa hát cổ truyền của người Việt.</p>
         <p>Ca Huế là một hệ thống bài bản phong phú gồm khoảng 60 tác phẩm thanh nhạc và khí nhạc theo hai điệu thức lớn là điệu Bắc, điệu Nam và một hệ thống "hơi" diễn tả nhiều sắc thái tình cảm đặc trưng. Điệu Bắc gồm những bài ca mang âm điệu tươi tắn, trang trọng. Điệu Nam là những bài âm điệu buồn, nỉ non, ai oán. Bài bản Ca Huế có cấu trúc chặt chẽ, nghiêm ngặt, trải qua quá trình phát triển lâu dài đã trở thành nhạc cổ điển hoàn chỉnh, mang nhiều yếu tố "chuyên nghiệp" bác học về cấu trúc, ca từ và phong cách biểu diễn. Đi liền với ca Huế là dàn nhạc Huế với bộ ngũ tuyệt Tranh, Tỳ, Nhị, Nguyệt, Tam, xen với Bầu, Sáo và bộ gõ trống Huế, sanh loan, sanh tiền.</p>
         <p>Kỹ thuật đàn và hát Ca Huế đặc biệt tinh tế nhưng Ca Huế lại mang đậm sắc thái địa phương, phát sinh từ tiếng nói, giọng nói của người Huế nên gần gũi với Hò Huế, Lý Huế; là chiếc cầu nối giữa nhạc cung đình và âm nhạc dân gian.</p>
-        <div style="text-align: justify;">
+        <div>
             <img src="./images/truong-lang-dai-noi-hue.jpg" style="height: 10em;float: right;;margin-left: 10px;">
             <div>
                 <p> 
@@ -52,7 +87,7 @@
                 </p>
             </div>
         </div>
-        <div style="z-index:-1;position: absolute;bottom: 0; display: flex;flex-direction: column;height: 100vh;justify-content: space-around;">
+        <div class="twoflag">
             <img src="./images/co-vietnam.png"/>
             <img src="./images/co-vietnam.png"/>
         </div>
